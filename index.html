@@ -7,15 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+      <div class="col-md-12 jumbotron text-center text-white">
+        <h1 class="text-white">Belly Button Biodiversity Dashboard</h1>
+        <p class="text-white"><strong>Use the interactive charts below to explore the dataset</strong></p>
       </div>
     </div>
     <div class="row">
@@ -32,16 +33,21 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 container-fluid">
         <div id="bar"></div>
+        <caption><em>Bar Graph:</em> Provides information for the top ten bacteria's identified by there OTU - ID 
+          and the quantity of bacteria counted for each ID in descending order. </caption>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 container-fluid">
         <div id="gauge"></div>
+        <caption><em>Gauge Chart:</em> Provides information for the frequency in which the test subject washed there bellybuttons. </caption>
       </div>
     </div>
-    <div class="row">
+    <div class="row container-fluid">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <caption><em>Bubble Graph:</em> Provides information for <strong>all</strong> bacteria's identified with the quantity of bacteria counted 
+          for each ID used to determine bubble size on graph.</caption>
       </div>
     </div>
   </div>
